@@ -286,7 +286,7 @@ a {
 }
 
 .service-card h3 {
-  margin: 1.25rem 1.25rem 0.75rem;
+  margin: 1.25rem 1.25rem 0.5rem;
   font-size: 1.2rem;
 }
 
@@ -305,11 +305,14 @@ a {
   justify-content: center;
 }
 
-.video-placeholder {
-  width: min(920px, 100%);
-  min-height: 300px;
-  border-radius: 28px;
-  border: 1px solid rgba(255,255,255,.08);
+  .service-video {
+    width: min(920px, 100%);
+    border-radius: 28px;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+  }
+
   background: rgba(255,255,255,.04);
   display: grid;
   place-items: center;
